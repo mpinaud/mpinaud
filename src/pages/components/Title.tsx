@@ -4,13 +4,14 @@ import * as pack from "../../../package.json"
 const date = new Date()
 const year = date.getFullYear()
 
-const App = () => {
+const Title: React.FC = () => {
   return (
     <div>
-      <p>Mikey Pinaud {year}</p>
-      <p>V{pack.version}</p>
+      <p>
+        Mikey Pinaud {year} V{pack.version}
+      </p>
     </div>
   )
 }
 
-export default App
+export default Title
