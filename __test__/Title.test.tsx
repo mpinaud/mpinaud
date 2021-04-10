@@ -1,10 +1,10 @@
 import React from "react"
 import renderer from "react-test-renderer"
-import App from "../src/pages/components/App"
+import Title from "../src/pages/components/Title"
 
-describe("App", () => {
+describe("Title", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<App />).toJSON()
+    const tree = renderer.create(<Title />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })
